@@ -1,0 +1,14 @@
+# access rules
+
+Options +Indexes
+
+IndexOptions FancyIndexing
+
+IndexIgnore *.php | Project | PAGASA_STEEL_WORKS
+
+# DirectoryIndex main.php
+
+<FilesMatch "filenotfound.php$">
+	order allow,deny
+	deny from all
+</FilesMatch>
